@@ -12,6 +12,7 @@ I will walk you through a very basic example function and then you will have a f
 do on your own!
 """
 
+
 def add_together(num_1, num_2):
     """
     Docstrings! Where I am typing now is called a doc string and this is where you
@@ -25,25 +26,29 @@ def add_together(num_1, num_2):
     of two numbers that is assigned to the variable "result"
     """
 
-    result = num_1 + num_2 # addition in python
-    return result # return the result
+    result = num_1 + num_2  # addition in python
+    return result  # return the result
 
-print(add_together(3, 4)) # you can see here I am calling the function, but in order to see the result you need to print!
 
-### YOUR TURN!!!!!!
+# you can see here I am calling the function, but in order to see the result you need to print!
+print(add_together(3, 4))
+
+# YOUR TURN!!!!!!
 
 """
 This next function I want you to code multiplication. The function expects two numbers as
 parameters and returns one variable, the result of multiplication of two numbers. INCLUDE DOCSTRINGS!!!
 """
 
+
 def multiply(num_1, num_2):
-  """
-  Params: parameter section, what is being passed into the function. For this example, the paramaters are num_1 and num_2 with types integer
-  Returns: We are retuning the multiplication of two numbers that is assigned to the variable "result"    
-  """
-  result = num_1 * num_2
-  return result
+    """
+    Params: parameter section, what is being passed into the function. For this example, the paramaters are num_1 and num_2 with types integer
+    Returns: We are retuning the multiplication of two numbers that is assigned to the variable "result"    
+    """
+    result = num_1 * num_2
+    return result
+
 
 print(multiply(10, 12))
 
@@ -51,13 +56,15 @@ print(multiply(10, 12))
 This next function I want you to implement raising a number to a certain power. Example: 2^2 = 4
 """
 
+
 def power(num, power_raise):
-  """
-  params: number and power to raise number
-  returns: result of raising number to power
-  """
-  result = num ** power_raise
-  return result
+    """
+    Params: number and power to raise number
+    Returns: result of raising number to power
+    """
+    result = num ** power_raise
+    return result
+
 
 print(power(3, 2))
 
@@ -66,4 +73,16 @@ For practice, make any function you want! Write the function on your own and tel
 does in the docstrings. Include test calls!!!
 """
 
-# TODO, your function here
+
+def counter(num):
+    """
+    Params: number you want to count up to, starting at 0
+    Returns: each number as it counts up, and returns "I'm done counting!" when it's done
+    """
+    for x in range(num):
+        print(x)
+    else:
+        print("I'm done counting!")
+
+
+counter(20)
